@@ -65,8 +65,7 @@ student's profile page to get further information about that student.
 > parsed, we can use Nokogiri's `.css` method to access specific elements based on
 > their class or id. After reading the instructions below, inspect
 > the [website][] in a browser to find the appropriate CSS classes for elements you
-> need to scrape. For more information, check out [Nokogiri's reference materials][] for
-> additional information
+> need to scrape. For more information, check out [Nokogiri's reference materials][]
 
 [website]: https://learn-co-curriculum.github.io/student-scraper-test-page/
 [Nokogiri's reference materials]: https://nokogiri.org/tutorials/searching_a_xml_html_document.html
@@ -74,7 +73,7 @@ student's profile page to get further information about that student.
 #### The `.scrape_index_page` Method
 
 This is a class method that should take in an argument of the URL of the index
-page, for the purposes of our test the URL will be
+page; for the purposes of our test the URL will be
 `https://learn-co-curriculum.github.io/student-scraper-test-page/index.html`.
 This method should use Nokogiri and Open-URI to access that page. The return
 value of this method should be an array of hashes in which each hash represents
@@ -106,7 +105,7 @@ This is a class method that should take in an argument of a student's profile
 URL. It should use Nokogiri and Open-URI to access that page. The return value
 of this method should be a hash in which the key/value pairs describe an
 individual student. Some students don't have a Twitter or some other social
-link. Be sure to be able to handle that. Once written, the following code
+link. Be sure the method can handle that. Once written, the following code
 should return a hash containing info from the provided `profile_url`:
 
 ```ruby
